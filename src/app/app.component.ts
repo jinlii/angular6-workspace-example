@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LibOneService } from 'projects/lib-one/src/public_api';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'okta-workspace-example';
+  title = 'app';
+  constructor(private oneService: LibOneService) {
+    this.title = this.oneService.SayHello("Angular 6 Workspace -- ")
+  }
 }

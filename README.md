@@ -1,6 +1,16 @@
 # OktaWorkspaceExample
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
+
+```
+ng generate library libOne
+ng generate service hello  --project=libOne
+
+ng generate library libTwo
+
+ng generate application webOne
+ng build --project=webOne
+
+````
 
 ## Development server
 

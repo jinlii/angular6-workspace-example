@@ -16,6 +16,20 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "libOne": [
+        "dist/lib-one"
+      ],
+      "libOne/*": [
+        "dist/lib-one/*"
+      ],
+      "libTwo": [
+        "dist/lib-two"
+      ],
+      "libTwo/*": [
+        "dist/lib-two/*"
+      ]
+    }
   }
 }
